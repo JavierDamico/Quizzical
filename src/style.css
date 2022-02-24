@@ -1,0 +1,96 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  background-color: #f5f7fb;
+}
+
+.start--container {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 800px;
+  height: 800px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.start--container h1 {
+  font-family: "karla", sans-serif;
+  font-size: 3rem;
+  font-weight: bold;
+  color: #293264;
+}
+.start--container h3 {
+  color: #293264;
+  margin-top: 12px;
+}
+
+.start--container button {
+  width: 280px;
+  height: 70px;
+  /* padding: 24px; */
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.5rem;
+  line-height: 19px;
+  text-align: center;
+  color: #f5f7fb;
+  background-color: #4d5b9e;
+  border-radius: 15px;
+  outline: none;
+  border: none;
+  margin-top: 48px;
+}
+
+.questions--container {
+  max-width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.questions--container button {
+  position: absolute;
+  left: 43%;
+  margin-top: 24px;
+  font-family: "Inter", sans-serif;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #f5f7fb;
+  background-color: #4d5b9e;
+  border-radius: 12px;
+  border: none;
+  padding: 12px;
+}
+
+.questions--container h2 {
+  font-family: "Karla", sans-serif;
+  color: #293264;
+  margin-top: 24px;
+}
+
+.questions--container span {
+  display: inline-block;
+  font-size: 12px;
+  font-weight: 500;
+  color: #293264;
+  border: 1px solid #293264;
+  border-radius: 10px;
+  margin-right: 2rem;
+  margin-top: 24px;
+  padding: 6px;
+}
+
+.questions--container hr {
+  margin-top: 24px;
+}
+
+.questions--container.selected {
+  background-color: #d6dbf5;
+}
