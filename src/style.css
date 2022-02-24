@@ -86,6 +86,9 @@ body {
   margin-top: 24px;
   padding: 6px;
 }
+.questions--container span:hover {
+  cursor: pointer;
+}
 
 .questions--container hr {
   margin-top: 24px;

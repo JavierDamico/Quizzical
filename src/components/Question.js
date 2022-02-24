@@ -6,14 +6,20 @@ export default function Question(props) {
   }
   let allAnswers = [props.correctAnswer, ...props.incorrectAnswers];
   shuffle(allAnswers);
-  // console.log(allAnswers);
+
   const displayAnswers = allAnswers.map((answer) => {
-    return <span>{answer}</span>;
+    return <span>{htmlDecode(answer)}</span>;
   });
+
+  //this function parses text to convert HTML character references
+  function htmlDecode(input) {
+    var doc = new DOMParser().parseFromString(input, "text/html");
+    return doc.documentElement.textContent;
+  }
 
   return (
     <div className="question">
-      <h2>{props.question}</h2>
+      <h2>{htmlDecode(props.question)}</h2>
       {displayAnswers}
       <hr />
     </div>
